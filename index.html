@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Martas CV</title>
+</head>
+<body>
+<div class="content">
+<div id="title">
+    <h1>Marta Bulāne</h1>
+    <p>Mob. tālr.: 28470252 </p>
+    <p>E-pasts: bulanemarta@gmail.com </p>
+    <img src="foto.JPG" class="img-frame">
+</div>
+<div id="goal">
+    <h2>Raksturojums un mērķis:</h2>
+    <p>Vēlos teorētiskās zināšanas pielietot praksē, kā arī iegūt jaunas prasmes un dziļāku saprašanu par IT nozari.
+        Vēlos jau tagad sākt strādāt jomā, kurā plānoju veidot savu karjeru. Esmu gatava cītīgi mācīties un smagi strādāt,
+        lai attīstītu sevi un lai kļūtu par pilnvērtīgu un rezultātus sniedzošu darbinieku. </p>
+</div>
+<div id="education">
+    <button class="accordion">Izglītība</button>
+    <div class="panel">
+    <h3>Jaunsilavas pamatskola</h3>
+    <p class="time">2004-2014</p>
+    <h3>Rīgas Valsts vācu ģimnāzija</h3>
+    <p class="time">2014-2017 </p>
+    <h3>Latvijas Universitāte</h3>
+    <p>Datorzinātnes - bakalaura studiju programma </p>
+    <p class="time">2017-</p>
+    </div>
+</div>
+<div id="addeducation">
+    <button class="accordion">Papildus izglītība</button>
+    <div class="panel">
+    <h3>Jēkaba Graubiņa mūzikas skola </h3>
+    <p>2004-2014</p>
+    <h3>Līvānu Bērnu un jaunatnes sporta skola </h3>
+    <p>2006-2014</p>
+    </div>
+</div>
+<div id="experience">
+    <button class="accordion">Darba pieredze</button>
+    <div class="panel">
+    <h3>SIA “Apranga LV” </h3>
+    <p>Veikals “Promod” – pārdevējs/konsultants </p>
+    <p>15.05.2017.-16.09.2017. </p>
+    <h3>SIA “H&M Hennes & Mauritz” </h3>
+    <p>Veikals “H&M” – pārdevējs/konsultants </p>
+    <P>23.10.2017.-28.06.2018. </P>
+    </div>
+</div>
+<div id="languages">
+    <button class="accordion">Valodu prasmes </button>
+    <div class="panel">
+        <div class="ŗow">
+            <div class="col1 bold">Runāju</div>
+            <div class="col1 bold">Saprotu</div>
+            <div class="col1 bold">Rakstu</div>
+        </div>
+        <div class="row">
+            <div class="col bold">Latviešu</div>
+            <div class="col">dzimtā</div>
+            <div class="col">dzimtā</div>
+            <div class="col">dzimtā</div>
+        </div>
+        <div class="row">
+            <div class="col bold">Angļu</div>
+            <div class="col">B2</div>
+            <div class="col">B2</div>
+            <div class="col">B2</div>
+        </div>
+        <div class="row">
+            <div class="col bold">Krievu</div>
+            <div class="col">B1</div>
+            <div class="col">B1</div>
+            <div class="col">B1</div>
+        </div>
+        </div>
+    </div>
+<div id="skills">
+    <button class="accordion">Citas prasmes</button>
+    <div class="panel">
+    <p>Datorprasmes: C++ pamatprasmes, HTML, CSS un JavaScript pamatprasmes, datortīklu pamatzināšanas  </p>
+    <p>B kategorijas autovadītāja apliecība </p>
+</div>
+</div>
+</div>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i=0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+</body>
+</html>
